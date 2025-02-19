@@ -97,6 +97,7 @@ php bin/console doctrine:migrations:migrate
 ### 6. **Lancement du serveur Symfony**
 
 symfony server:start
----
+
+```
 
 ![Music Band Management api](public/images/api.png)
