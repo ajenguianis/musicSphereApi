@@ -98,5 +98,6 @@ php bin/console doctrine:migrations:migrate
 
 symfony server:start
 
+```
 
 ![Music Band Management api](public/images/api.png)
