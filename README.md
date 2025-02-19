@@ -65,3 +65,38 @@ The **Music Band Management System** is designed to efficiently manage music ban
 ![Music Band Management System](public/images/music-brand-management.jpg)
 
 ---
+
+## 🚀 Installation & Lancement du serveur
+
+### 1. **Prérequis**
+Avant de commencer, assurez-vous d'avoir les outils suivants installés sur votre machine :
+
+- **PHP 8.3 ou supérieur** : Vérifiez votre version PHP en exécutant `php -v`. Si la version est inférieure à 8.3, veuillez mettre à jour PHP.
+- **Composer** : Composer est utilisé pour gérer les dépendances PHP. Vous pouvez vérifier son installation avec `composer -v`. Si nécessaire, installez-le via [composer](https://getcomposer.org/).
+- **Symfony CLI** : Symfony CLI est un outil pour exécuter des commandes Symfony et gérer le serveur local. Vérifiez son installation avec `symfony -v`. Si nécessaire, installez-le via [Symfony CLI](https://symfony.com/download).
+- **Git** : Git est nécessaire pour cloner le dépôt depuis GitHub. Vérifiez si vous avez Git avec `git --version`. Si ce n'est pas le cas, installez-le via [Git](https://git-scm.com/).
+
+### 2. **Clonage du projet**
+Pour obtenir le code source du projet, clonez le dépôt GitHub en utilisant la commande suivante dans votre terminal :
+
+```bash
+git clone https://github.com/ton-utilisateur/ton-repository.git
+
+### 3. **Installation des dépendances**
+cd musicSphereApi
+composer install
+
+### 4. **Configuration de la base de données**
+cp .env .env.local
+
+### 5. **Création de la base de données et migration**
+
+php bin/console doctrine:database:create
+php bin/console doctrine:migrations:migrate
+
+### 6. **Lancement du serveur Symfony**
+
+symfony server:start
+
+
+![Music Band Management api](public/images/api.png)
