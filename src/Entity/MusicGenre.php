@@ -15,8 +15,9 @@ class MusicGenre
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column(type: 'integer')]
+    #[Groups(["brand:read"])]
     private ?int $id = null;
-
+    #[Groups(["brand:read"])]
     #[ORM\Column(length: 100, unique: true)]
     private string $name;
 
